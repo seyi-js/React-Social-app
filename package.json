@@ -1,0 +1,62 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat app",
+  "main": "server.js",
+  "dependencies": {
+    "@pm2/io": "^4.3.3",
+    "async": "^3.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "browser-sync": "2.26.7",
+    "connect-ensure-authenticated": "^1.0.8",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^5.3.1",
+    "forever": "^2.0.0",
+    "forever-monitor": "^2.0.0",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "local": "^0.3.3",
+    "moment": "^2.24.0",
+    "mongodb-autoincrement": "^1.0.1",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.8.4",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "nohup": "^0.1.0",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "pm2": "^4.2.3",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0",
+    "upper-case": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  --prefix Client && npm run build --prefix Client",
+    "dev": "nodemon app.js"
+  },
+  "author": "ADEBAYO SAMUEL OLUWASEYI",
+  "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "heroku"
+  ]
+}
